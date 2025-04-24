@@ -47,12 +47,27 @@ mmls disk.dd
 fls -f fat -o 0 disk.dd
 ```
 ![image](https://github.com/user-attachments/assets/4afa1fc3-52c3-4c25-bb69-5788b0e8bdf1)
+```
+sudo mkdir -p /dmt/mount
+sudo mount -o loop disk.dd /dmt/mount
 
+```
 ![image](https://github.com/user-attachments/assets/a80da0b5-a83e-44fd-bc54-146df3eb0257)
 
-![image](https://github.com/user-attachments/assets/91520c9e-8c99-4347-82d2-2fa42f09d486)
+```
+sudo cp /home/kali/Desktop/kali.png /dmt/mount
+sudo touch /dmt/mount/hello.txt
+sudo mkdir /dmt/mount/test_folder
+```
 
+![image](https://github.com/user-attachments/assets/91520c9e-8c99-4347-82d2-2fa42f09d486)
+```
+fls -f ext4 -o 2048 disk.dd
+```
 ![image](https://github.com/user-attachments/assets/1972eea0-f2aa-471e-8cc7-83e1279f38eb)
+```
+fls -f fat -o 0 disk.dd
+```
 
 ![image](https://github.com/user-attachments/assets/29319725-7fe4-4803-a949-ba7aae598fd1)
 
